@@ -6,6 +6,8 @@ from modules.password_generator import PasswordGenerator
 
 # ---------------------------- CONSTANTS ------------------------------- #
 
+DEFAULT_EMAIL_TEXT = "Type your email here!"
+
 LOGO_IMAGE_PATH = "_internal/art/logo.png"
 
 FONT_NAME = "Rockwell"
@@ -156,7 +158,7 @@ website_entry.focus()
 website_entry.grid(column=1, row=1, sticky="W", padx=PAD_X, pady=PAD_Y)
 
 email_entry = Entry(width=32)
-email_entry.insert(0, "xxjakubszewczykxx@gmail.com")
+email_entry.insert(0, DEFAULT_EMAIL_TEXT)
 email_entry.grid(column=1, row=2, columnspan=2, sticky="W", padx=PAD_X, pady=PAD_Y)
 
 password_entry = Entry(width=32)
